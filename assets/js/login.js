@@ -65,7 +65,7 @@ $(function () {
       // 登陆成功 将获取到的token存入localStroage
       localStorage.setItem('token', res.token)
       // 成功后跳转到首页
-      location.href = '/index.html'
+      location.href = './index.html'
     })
   })
 })
