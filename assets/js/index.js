@@ -68,4 +68,18 @@ function renderAvatar(user) {
     $('.layui-nav-img').hide()
     $('.text-avatar').html(name[0].toUpperCase()).show()
   }
+
+  $('.user_info,.user_avatar,.user_pwd').on('click', function () {
+    // 获取到当前的点击的自定义属性
+    var calssStr = $(this).attr('data-user')
+    // 清除所有layui-this 类名
+    $('.layui-this').removeClass('layui-this')
+    // // 当前点击的添加layui-this类名
+    $('.user_' + calssStr).addClass('layui-this')
+
+    // 清除所有下拉类名
+    $('.layui-nav-itemed').removeClass('layui-nav-itemed')
+    // 给用户信息列添加layui-nav-itemed
+    $('#lis_info').addClass('layui-nav-itemed')
+  })
 }

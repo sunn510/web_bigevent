@@ -30,8 +30,7 @@ iframe {
   user-select: none;
   font-size: 12px;
 }
-
-.layui-side-scroll .userinfo {
+.userinfo .layui-side-scroll .userinfo {
   border-bottom: 1px solid #23262c;
   margin-right: 10px;
 }
@@ -39,9 +38,9 @@ iframe {
 .layui-nav-img {
   width: 40px;
   height: 40px;
+  display: none;
 }
 .text-avatar {
-  display: inline-block;
   width: 40px;
   height: 40px;
   background-color: #008688;
@@ -52,4 +51,6 @@ iframe {
   color: #fff;
   font-size: 20px;
   margin-right: 10px;
+  display: none;
+  display: inline-block;
 }
